@@ -68,16 +68,6 @@
       position: relative;
       text-shadow: 0 2px 8px #a30046;
     }
-    .tagline {
-      font-family: 'Orbitron', sans-serif;
-      color: #0ff;
-      font-size: 1.08rem;
-      margin-bottom: 1em;
-      z-index: 2;
-      position: relative;
-      letter-spacing: 1px;
-      text-shadow: 0 1px 5px #01b0bacc;
-    }
     .tags {
       display: flex;
       flex-wrap: wrap;
@@ -103,13 +93,24 @@
     }
     .desc {
       margin: 1.2em 0 2em 0;
+      padding: 0 1.3em;
       font-size: 1.09em;
       color: #fff;
-      line-height: 1.45;
+      line-height: 1.5;
       text-shadow: 0 1px 6px #3c003a88;
       z-index: 2;
       position: relative;
       text-align: justify;
+    }
+    .desc ul {
+      list-style: disc inside;
+      padding-left: 0;
+      margin: 0;
+    }
+    .desc li {
+      margin-bottom: 0.7em;
+      text-align: left;
+      font-size: 1.01em;
     }
     .links {
       display: flex;
@@ -158,25 +159,22 @@
         border-radius: 0.8rem;
       }
       .card h1 { font-size: 1.25rem; }
-      .tagline { font-size: 0.93rem; }
-      .desc { font-size: 1em; }
-      .avatar img { width: 150px; height: 150px; }
+      .desc { font-size: 1em; padding-left: 0.9em; padding-right: 0.9em;}
+      .avatar img { width: 200px; height: 200px; }
     }
   </style>
 </head>
+
 <body>
   <div class="card">
     <div class="avatar">
       <picture>
-        <source srcset="img/BudPic_120.png" media="(max-width: 550px)">
+        <source srcset="img/BudPic_360.png" media="(max-width: 550px)">
         <source srcset="img/BudPic_360.png">
         <img src="img/BudPic_360.png" alt="Mathieu 'Bud' Bodart - Photo de profil" width="128" height="128" loading="lazy">
       </picture>
     </div>
     <h1>Mathieu "Bud" Bodart</h1>
-    <div class="tagline">
-      Administrateur système VoIP • Développeur • Musicien • Motard • Geek • Scout • Roliste
-    </div>
     <div class="tags">
       <span class="tag">Administrateur système VoIP</span>
       <span class="tag">Développeur</span>
@@ -187,18 +185,13 @@
       <span class="tag">Roliste</span>
     </div>
 <div class="desc">
-  <p>
-    Je conçois et maintiens des systèmes de téléphonie IP fiables, automatisés et résilients. J’aime sécuriser, superviser et optimiser les communications, en développant des outils simples et efficaces adaptés aux besoins réels.
-  </p>
-  <p>
-    Curieux par nature, je m’intéresse au scripting, à l’infrastructure as code et aux dynamiques des flux de communication, autant techniques qu’humaines.
-  </p>
-  <p>
-    La musique occupe une place centrale dans ma vie : basse, batterie rock/métal et percussions classiques. La moto m’apporte l’équilibre et le goût de la route. J’ai été engagé dans le scoutisme, sous le totem Baribal Généreux, et je suis rôliste depuis plus de 25 ans, comme joueur et Maître de Jeu, pour l’amour des univers, de la narration et du collectif.
-  </p>
-  <p>
-    Ouvert aux projets professionnels, aux missions de jeu de rôle et aux initiatives sociales et musicales, toujours partant pour collaborer, créer et partager.
-  </p>
+  <ul>
+    <li>Concepteur de systèmes de téléphonie IP robustes, automatisés et sécurisés</li>
+    <li>Musicien : basse, batterie rock/métal, percussions classiques</li>
+    <li>Scout engagé (Baribal Généreux) : partage, transmission, autonomie</li>
+    <li>Joueur et maître de jeu de rôle depuis plus de 25 ans : univers, narration, collectif</li>
+    <li>Ouvert à la collaboration sur des projets professionnels, rôlistes, sociaux et musicaux</li>
+  </ul>
 </div>
 
     <div class="links">
